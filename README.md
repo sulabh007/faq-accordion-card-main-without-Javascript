@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://github.com/sulabh007/faq-accordion-card-main-without-Javascript-)
+- Solution URL: [Click here](https://github.com/sulabh007/faq-accordion-card-main-without-Javascript)
 - Live Site URL: [Click URL here](https://your-live-site-url.com)
 
 ## My process
