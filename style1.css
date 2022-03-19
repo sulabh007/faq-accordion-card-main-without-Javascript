@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html {
+    height: 100%;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    ;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(0deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%)) no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width:376px) {
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 920px;
+        height: 509px;
+        position: relative;
+        display: flex;
+    }
+
+    .bg-img {
+        width: 388px;
+        height: 100%;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-position: right -294px;
+    }
+
+    .box-image {
+        position: absolute;
+        left: 11.6%;
+        top: 42.6%;
+        width: 191px;
+        height: 184px;
+        z-index: 1;
+        overflow: overlay;
+    }
+
+    .image {
+        position: relative;
+        left: -22%;
+        top: 13.754%;
+    }
+
+    .image1 {
+        display: none;
+    }
+
+    .text {
+        display: block;
+        margin-top: 46px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icon {
+        margin-right: 13px;
+    }
+
+    .section {
+        width: 349px;
+    }
+
+    .section .content {
+        width: 320px;
+    }
+
+    .section .handle {
+        font-size: 14px;
+    }
+
+    .section label {
+        padding: 10px;
+    }
+}
+
+@media(max-width:376px) {
+    main {
+        width: 327px;
+        height: 642px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .box {
+        display: flex;
+        width: 327px;
+        height: 535px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image1 {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        width: 236.85px;
+        top: 8.5px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .bg-img {
+        width: 240px;
+        height: 104px;
+        background-image: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+
+    .box-image {
+        position: absolute;
+        display: none;
+    }
+
+    .text {
+        display: block;
+        width: 280px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 280px;
+    }
+
+    .section .content {
+        width: 240px;
+    }
+
+    .section .handle {
+        font-size: 13px;
+    }
+}
+
+.box {
+    border-radius: 22px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 20px 20px 10px #0000002b;
+}
+
+p {
+    color: hsl(237, 12%, 33%);
+    margin-top: 16px;
+    margin-bottom: 11px;
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+    height: 1px;
+    border: none;
+    background-color: #E8E8E8;
+    margin-top: 5.1px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 17px;
+    margin-bottom: 22px;
+
+}
+
+.section>input[name="collapse"] {
+    display: none;
+}
+
+.section .content {
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+}
+
+.section>input[name="collapse"]:checked~.content {
+    height: 46px;
+    transition: height 0.5s;
+}
+
+.section>input[name="collapse"]:checked~.handle>label>img {
+    transform: rotate(180deg);
+    transition-duration: 0.3s;
+}
+
+.section .handle {
+    margin: 0;
+    height: 45px;
+}
+.section label:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.handle label .icon {
+    transition-duration: 0.3s;
+}
+
+.section>input[name="collapse"]:checked~.content {
+    border-top: 0;
+    transition: 0.3s;
+}
+
+.section>input[name="collapse"]:checked~.handle>label {
+    font-weight: 700;
+}
+
+.section>input[name="collapse"]:checked~.handle>label>img {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.section label {
+    cursor: pointer;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    color: hsl(237, 12%, 33%);
+}
